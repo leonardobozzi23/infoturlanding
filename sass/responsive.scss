@@ -1,0 +1,104 @@
+@import 'colors';
+@import 'items';
+
+@media screen and (max-width: 965px){
+    header{
+        .responsivo{
+            label{
+                img{
+                    display: block;
+                }
+            }   
+        }
+        nav{
+            position: absolute;
+            background: $cor-button;
+            width: 100vw;
+            height: 80vh;
+            top: -150%;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul{
+                li{
+                    display: flex;
+                    margin: 45px 0;
+                    a{
+                        color: #fff;
+                        &:focus{
+                            border-bottom: 1px solid #fff;
+                        }
+                    }
+                }
+                .close-menu{
+                    display: block;
+                }
+            }
+            transition: all .8s ease-in-out;
+        }
+    }
+    #check:checked ~ #menu{
+        top: 0;
+    }
+}
+
+
+@media screen and (max-width: 610px){
+    main{
+        h1{
+            font-size: 40px;
+            width: 400px;
+        }
+        button{
+            width: 250px;
+            height: 50px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 410px){
+    main{
+        h1{
+            font-size: 30px;
+            width: 300px;
+
+        }
+        p{
+            font-size: 34px;
+        }
+        button{
+            width: 200px;
+            height: 40px;
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 310px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        h1{
+            font-size: 20px;
+            width: 200px;
+
+        }
+        p{
+            font-size: 24px;
+        }
+        button{
+            width: 150px;
+            height: 30px;
+            font-size: 10px;
+        }
+    }
+    footer{
+        img{
+            width: 25px;
+        }
+    }
+}

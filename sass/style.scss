@@ -1,0 +1,112 @@
+@import 'colors';
+@import 'items';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/bg.png);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    #check{
+        display: none;
+    }
+    .responsivo{
+        label{
+            img{
+                display: none;
+                width: 30px;
+                height: 30px;
+            }
+        z-index: 15;
+        position: absolute;
+        }
+    }
+    img{
+        width: 140px;
+        height: 40px;
+    }
+    nav{
+        ul{
+            li{
+                display: inline;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: $cor-texto;
+                    @include font;
+                    font-size: 18px;
+                    margin: 0 45px;
+                    padding: 5px;
+                    &:hover{
+                        border-bottom: 1px solid $cor-texto;
+                        transform-origin: center;
+                        opacity: .7;
+                    }
+                }
+            }
+            .close-menu{
+                display: none;
+            }
+        }
+    }
+}
+
+main{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include font;
+    h1{
+        font-weight: 100;
+        font-size: 60px;
+        width: 600px;
+        text-align: center;
+        margin: 35px 0 0;
+    }
+    p{
+        color: $cor-button;
+        font-weight: 400;
+        font-size: 60px;
+    }
+    button{
+        width: 390px;
+        height: 70px;
+        border: none;
+        background: $cor-button;
+        border-radius: 45px;
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 100;
+        margin: 35px 0;
+        &:hover{
+            opacity: .7;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    img{
+        cursor: pointer;
+        margin: 0 10px;
+    }
+
+}
+
