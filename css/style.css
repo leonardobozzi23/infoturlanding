@@ -102,4 +102,45 @@ footer img {
   margin: 0 10px;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 70vh;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: inset 0 0 15px #00000025;
+}
+.container .paris, .container .grecia, .container .italia {
+  width: 80%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 15px #00000025;
+  margin: 5px;
+  padding: 5px 45px;
+  border-radius: 10px;
+}
+.container .paris img, .container .grecia img, .container .italia img {
+  width: 200px;
+}
+.container .paris .paris-content, .container .paris .grecia-content, .container .paris .italia-content, .container .grecia .paris-content, .container .grecia .grecia-content, .container .grecia .italia-content, .container .italia .paris-content, .container .italia .grecia-content, .container .italia .italia-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Raleway", sans-serif;
+}
+.container .paris .paris-content p, .container .paris .grecia-content p, .container .paris .italia-content p, .container .grecia .paris-content p, .container .grecia .grecia-content p, .container .grecia .italia-content p, .container .italia .paris-content p, .container .italia .grecia-content p, .container .italia .italia-content p {
+  font-size: 20px;
+  font-weight: 100;
+}
+.container .paris .paris-content h1, .container .paris .grecia-content h1, .container .paris .italia-content h1, .container .grecia .paris-content h1, .container .grecia .grecia-content h1, .container .grecia .italia-content h1, .container .italia .paris-content h1, .container .italia .grecia-content h1, .container .italia .italia-content h1 {
+  font-size: 20px;
+  font-weight: 100;
+  text-align: start;
+  margin: 0 0 20px 0;
+}
+
 /*# sourceMappingURL=style.css.map */

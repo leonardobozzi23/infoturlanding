@@ -1,6 +1,26 @@
+@keyframes entrar {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media screen and (max-width: 965px) {
+  header .responsivo {
+    top: 8%;
+    right: 10%;
+    position: absolute;
+  }
+  header .responsivo label {
+    width: 100%;
+  }
   header .responsivo label img {
     display: block;
+  }
+  header .responsivo label #close-menu {
+    display: none;
+    animation: entrar 1s ease;
+  }
+  header .responsivo label #open-menu {
+    animation: entrar 0.7s ease reverse;
   }
   header nav {
     position: absolute;
@@ -30,6 +50,14 @@
 
   #check:checked ~ #menu {
     top: 0;
+  }
+
+  #check:checked ~ * #open-menu {
+    display: none;
+  }
+
+  #check:checked ~ * #close-menu {
+    display: block;
   }
 }
 @media screen and (max-width: 610px) {
@@ -61,6 +89,10 @@
   header {
     display: flex;
     flex-direction: column;
+  }
+  header .responsivo {
+    top: 15%;
+    left: 47%;
   }
 
   main h1 {

@@ -1,12 +1,24 @@
 @import 'colors';
 @import 'items';
+@import 'animation';
 
 @media screen and (max-width: 965px){
     header{
         .responsivo{
+            top: 8%;
+            right: 10%;
+            position: absolute;
             label{
+            width: 100%;
                 img{
                     display: block;
+                }
+                #close-menu{
+                    display: none;
+                    animation: entrar 1s ease;
+                }
+                #open-menu{
+                    animation: entrar .7s ease reverse;
                 }
             }   
         }
@@ -40,6 +52,12 @@
     }
     #check:checked ~ #menu{
         top: 0;
+    }
+    #check:checked ~ * #open-menu{
+        display: none;
+    } 
+    #check:checked ~ * #close-menu{
+        display: block;
     }
 }
 
@@ -80,6 +98,10 @@
     header{
         display: flex;
         flex-direction: column;
+        .responsivo{
+            top: 15%;
+            left: 47%;
+        }
     }
     main{
         h1{
